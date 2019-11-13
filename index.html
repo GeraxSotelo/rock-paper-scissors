@@ -14,41 +14,55 @@
 <body>
 
   <div class="row">
-    <div class="col">
-
+    <div class="col-12 text-center">
+      <h3>COMPUTER</h3>
+    </div>
+    <div class="col-12 comp-deck pt-1 pb-2">
+      <div class="card">
+        <img
+          src="http://footlights.com/media/2145659/screen-shot-2019-05-01-at-15730-pm.png?crop=0,0.038194444444444448,0,0.11805555555555555&cropmode=percentage&width=360&height=243&rnd=132012902880000000"
+          class="comp-img" alt="...">
+        <div class="card-body">
+          <h5 id="compText" class="card-title text-center">READY!</h5>
+        </div>
+      </div>
     </div>
   </div>
 
-  <div class="row jumbotron m-0">
+
+
+  <div class="row jumbotron m-0 text-white">
     <div id="status" class="col"></div>
   </div>
 
+  <!-- PLAYER DECK -->
   <div class="row">
     <div class="col-12 text-center">
+      <h3>PLAYER</h3>
     </div>
-    <div class="col-12 player-deck pt-5">
+    <div class="col-12 player-deck pt-3">
       <div class="card-deck">
         <div id="rock" class="card" onclick="chooseRock()">
           <img src="http://stevedilworth.com/land/images/fire%20rock.jpg" class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title text-center">ROCK</h5>
-            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to</p>
+            <h5 class="card-title">ROCK</h5>
+            <p class="card-text">I can beat scissors!</p>
           </div>
         </div>
         <div id="paper" class="card" onclick="choosePaper()">
           <img src="https://i.pinimg.com/originals/fc/c3/51/fcc3513bf52d83fbb157863a2041b7a0.jpg" class="card-img-top"
             alt="...">
           <div class="card-body">
-            <h5 class="card-title text-center">PAPER</h5>
-            <p class="card-text">This card has supporting text below as a natural lead-in to additional</p>
+            <h5 class="card-title">PAPER</h5>
+            <p class="card-text">I can beat rock!</p>
           </div>
         </div>
         <div id="scissors" class="card" onclick="chooseScissors()">
           <img src="https://am21.akamaized.net/tms/cnt/uploads/2010/03/scissor-spider-550x366.jpg" class="card-img-top"
             alt="...">
           <div class="card-body">
-            <h5 class="card-title text-center">SCISSORS</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to</p>
+            <h5 class="card-title">SCISSORS</h5>
+            <p class="card-text">I can beat paper!</p>
           </div>
         </div>
       </div>

@@ -1,11 +1,29 @@
+body {
+  background: url("https://images.pexels.com/photos/325185/pexels-photo-325185.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940") no-repeat center;
+}
+
+h1, h4, h5 {
+  margin: 0;
+}
+
+.jumbotron {
+  background-color: black;
+  padding: 0.5em;
+}
+
 #status {
   width: 100%;
 }
 
-#play-button {
-  font-size: 2.5em;
-  width: 60%;
+.comp-deck {
+  max-height: 100%;
+  max-width: 20%;
   margin: auto;
+}
+
+.comp-img {
+  height: 10em;
+  object-fit: cover;
 }
 
 .player-deck {
@@ -13,10 +31,19 @@
   margin: auto;
 }
 
-.card {
+.player-deck .card {
   cursor: pointer;
 }
 
+.card-body {
+  text-align: center;
+  padding: 0.5rem;
+}
+
 .card-img-top {
-  height: 50%;
+  height: 12em;
+}
+
+#rock img {
+  object-fit: cover;
 }

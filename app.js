@@ -1,9 +1,14 @@
 
 function updateStatus(compChoice, results) {
-  document.querySelector("#status").innerHTML = `
+  let status = document.querySelector("#status");
+  let compText = document.querySelector("#compText");
+
+  status.innerHTML = `
   <h4 class="text-center">Computer chose ${compChoice}</h4>
   <h1 class="text-center">${results}</h1>
   `;
+
+  compText.innerText = `${compChoice.toUpperCase()}!`;
 }
 
 //PLAY//
@@ -20,7 +25,7 @@ function play(playerChoice) {
     } else if (playerChoice == "paper") {
       results = "You Win!";
     } else {
-      results = "Draw!";
+      results = "DRAW!";
     }
   } else if (compRandomChoice == 2) {
     compChoice = "paper";
@@ -29,7 +34,7 @@ function play(playerChoice) {
     } else if (playerChoice == "scissors") {
       results = "You Win!";
     } else {
-      results = "Draw!";
+      results = "DRAW!";
     }
   } else {
     compChoice = "scissors";
@@ -38,7 +43,7 @@ function play(playerChoice) {
     } else if (playerChoice == "rock") {
       results = "You Win!";
     } else {
-      results = "Draw!";
+      results = "DRAW!";
     }
   }
   updateStatus(compChoice, results);
