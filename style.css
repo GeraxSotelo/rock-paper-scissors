@@ -1,0 +1,22 @@
+#status {
+  width: 100%;
+}
+
+#play-button {
+  font-size: 2.5em;
+  width: 60%;
+  margin: auto;
+}
+
+.player-deck {
+  max-width: 60%;
+  margin: auto;
+}
+
+.card {
+  cursor: pointer;
+}
+
+.card-img-top {
+  height: 50%;
+}

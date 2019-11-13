@@ -5,38 +5,57 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
   <title>Rock Paper Scissors</title>
 </head>
 
 <body>
-  <div class="card-deck">
-    <div class="card">
-      <img src="..." class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
-          content. This content is a little bit longer.</p>
-        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-      </div>
+
+  <div class="row">
+    <div class="col">
+
     </div>
-    <div class="card">
-      <img src="..." class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-      </div>
+  </div>
+
+  <div class="row jumbotron m-0">
+    <div id="status" class="col"></div>
+  </div>
+
+  <div class="row">
+    <div class="col-12 text-center">
     </div>
-    <div class="card">
-      <img src="..." class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.
-          This card has even longer content than the first to show that equal height action.</p>
-        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    <div class="col-12 player-deck pt-5">
+      <div class="card-deck">
+        <div id="rock" class="card" onclick="chooseRock()">
+          <img src="http://stevedilworth.com/land/images/fire%20rock.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title text-center">ROCK</h5>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to</p>
+          </div>
+        </div>
+        <div id="paper" class="card" onclick="choosePaper()">
+          <img src="https://i.pinimg.com/originals/fc/c3/51/fcc3513bf52d83fbb157863a2041b7a0.jpg" class="card-img-top"
+            alt="...">
+          <div class="card-body">
+            <h5 class="card-title text-center">PAPER</h5>
+            <p class="card-text">This card has supporting text below as a natural lead-in to additional</p>
+          </div>
+        </div>
+        <div id="scissors" class="card" onclick="chooseScissors()">
+          <img src="https://am21.akamaized.net/tms/cnt/uploads/2010/03/scissor-spider-550x366.jpg" class="card-img-top"
+            alt="...">
+          <div class="card-body">
+            <h5 class="card-title text-center">SCISSORS</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to</p>
+          </div>
+        </div>
       </div>
     </div>
   </div>
+
+  <script src="app.js"></script>
 </body>
 
 </html>
