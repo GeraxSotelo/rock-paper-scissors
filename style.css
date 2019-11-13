@@ -2,7 +2,7 @@ body {
   background: url("https://images.pexels.com/photos/325185/pexels-photo-325185.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940") no-repeat center;
 }
 
-h1, h4, h5 {
+h1, h3, h4, h5 {
   margin: 0;
 }
 
@@ -16,14 +16,18 @@ h1, h4, h5 {
 }
 
 .comp-deck {
-  max-height: 100%;
-  max-width: 20%;
-  margin: auto;
+  max-width: 60%;
 }
 
 .comp-img {
-  height: 10em;
+  height: 12em;
   object-fit: cover;
+}
+
+.player-row h3 {
+  font-size: 2em;
+  letter-spacing: 0.8em;
+  text-shadow: 1px 1px 3px red;
 }
 
 .player-deck {
